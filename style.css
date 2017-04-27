@@ -1,0 +1,523 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: "FrontPage Neue";
+	src: url(assets/fonts/FrontPageNeue.otf);
+}
+
+@font-face{
+	font-family: "Maneo";
+	src: url(assets/fonts/Maneo_TRIAL.ttf);
+}
+
+html, body {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+	min-height: 625px;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-image: url(assets/images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#blacklayer {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.section {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.logo {
+	min-width: 280px;
+	max-width: 600px;
+	width: 80%;
+}
+
+@media screen and (max-height: 780px) {
+	.logo {
+		min-width: 80px;
+		max-height: 250px;
+	}
+}
+
+@media screen and (max-height: 680px) {
+	.logo {
+		min-width: 80px;
+		max-height: 200px;
+	}
+}
+
+#blacklayer h2 {
+	font-family: "Maneo";
+	color: #f6cf1b;
+	font-size: 2.3em;
+	margin-top: 0;
+	top: 45px;
+	position: relative;
+}
+
+@media screen and (max-width: 600px) {
+	#blacklayer  h2 {
+		top: 40px;
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#blacklayer h2 {
+		top: 25px;
+		font-size: 1.3em;
+	}
+}
+
+#blacklayer h3 {
+	line-height: 0;
+	font-family: "FrontPage Neue";
+	color: #f6cf1b;
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+	#blacklayer  h3 {
+		font-size: 2.25em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#blacklayer h3 {
+		font-size: 1.5em;
+	}
+}
+
+.acesso {
+	align-self: center;
+	color: white;
+	margin-top: 20px;
+	height: 100px;
+	width: 250px;
+	background: rgba(255, 255, 255, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.1s ease;
+}
+
+.acesso:hover {
+	background: rgba(255, 255, 255, 0.5);
+	transition: all 0.1s ease;
+}
+
+.acesso span {
+	font-size: 2em;
+	font-family: "FrontPage Neue";
+}
+
+#content {
+	width: auto;
+	height: auto;
+	min-height: 950px;
+	background: #eee;
+	font-family: "FrontPage Neue";
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px 0;
+}
+
+#palestras, #comments {
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3%;
+}
+
+@media screen and (max-width: 1000px) {
+	#comments {
+		margin-top: 40px;
+	}
+}
+
+.pagetitle {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.pagecontent {
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+	.pagecontent {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.p_titulo {
+	margin-top: 45px;
+	text-align: center;
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: center;
+	margin-bottom: 130px;
+}
+
+.p_titulo h3{
+	font-size: 5em;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 40px;
+}
+
+@media screen and (max-width: 500px) {
+	.p_titulo h3 {
+		font-size: 4em;
+		top: 32px;
+	}
+}
+
+@media screen and (max-width: 418px) {
+	.p_titulo h3 {
+		font-size: 3em;
+		top: 24px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.p_titulo h3 {
+		font-size: 2em;
+		top: 16px;
+	}
+}
+
+.sec-title h4{
+	font-size: 2em;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+}
+
+.hashtag {
+	font-size: 20em;
+	line-height: 0;
+	opacity: 0.1;
+}
+
+@media screen and (max-width: 500px) {
+	.hashtag {
+		font-size: 16em;
+	}
+}
+
+@media screen and (max-width: 418px) {
+	.hashtag {
+		font-size: 12em;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.hashtag {
+		font-size: 12em;
+	}
+}
+
+#p_ext {
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#resume {
+	width: auto;
+	height: auto;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 1366px) {
+	#resume {
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#resume {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#resume {
+		max-width: 480px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#resume {
+		max-width: 800px;
+	}
+}
+
+#perfil {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	#perfil {
+		margin-top: 20px;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+#perfil img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-right: 40px;
+}
+
+@media screen and (max-width: 450px) {
+	#perfil img {
+		margin-right: 0px;
+	}
+}
+
+#p_int{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+#content button {
+	max-width: 322px;
+	cursor: pointer;
+	border: solid black 3px;
+	background: transparent;
+	padding: 20px 0px;
+	font-size: 1.5em;
+	font-family: "FrontPage Neue";
+	text-transform: uppercase;
+	transition: 0.1s all ease;
+}
+
+@media screen and (max-width: 322px) {
+	#content button {
+		max-width: 280px;
+		padding: 10px 0px;
+	}
+}
+
+#content button:hover {
+	color: white;
+	background: black;
+	transition: 0.1s all ease;
+}
+
+#content button a {
+	padding: 25px 100px;
+	color: black;
+}
+
+@media screen and (max-width: 322px) {
+	#content button a{
+		padding: 25px 50px;
+	}
+}
+
+#content button a:hover {
+	color: white;
+}
+
+#content button:active {
+	transition: 0.1s all ease;
+	transform: translate(2px, 2px);
+}
+
+#p_title h4 {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.p_bio {
+	display: block;
+	height: 100%;
+}
+
+@media screen and (max-width: 450px) {
+	.p_bio {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+}
+
+#informacao {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 1000px) {
+	#informacao {
+		width: auto;
+	}
+}
+
+
+.quadro-prog {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 5px 0;
+}
+
+.horario {
+	min-width: 50px;
+	display: block;
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 2px 0px;
+	margin-right: 15px;
+}
+
+.oque {}
+
+#comment-area {
+	width: auto;
+	height: auto;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 1366px) {
+	#comment-area {
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#comment-area {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#comment-area {
+		max-width: 450px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#comment-area {
+		max-width: 800px;
+	}
+}
+
+.sec-title {
+	background: black;
+	padding: 12px 24px;
+	color: white;
+	text-align: center;
+}
+
+.sec-title h4 {
+	letter-spacing: 2px;
+}
+
+.sec-title span {
+	opacity: 0.7;
+}
+
+.comment-perfil img {
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	margin-right: 20px;
+	object-fit: cover;
+}
+
+.comment-space {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 15px 0;
+}
+
+@media screen and (max-width: 450px) {
+	.comment-space {
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+}
+
+.comment-people p {
+	margin: 0;
+	padding: 0;
+}
+
+.focus {
+	color: rgba(0, 0, 0, 0.6);
+	text-transform: uppercase;
+}
