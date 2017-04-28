@@ -504,6 +504,18 @@ a {
 	object-fit: cover;
 }
 
+.comment-perfil div {
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	margin-right: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+}
+
 .comment-space {
 	display: flex;
 	justify-content: center;
