@@ -544,7 +544,7 @@ a {
 }
 
 .blacklayer {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.7);
 	height: 100%;
 	padding: 40px 0;
 }
@@ -592,4 +592,17 @@ a {
 
 .border li, .border p {
 	letter-spacing: 0.5px;
+}
+
+.border li a {
+	color: #f6cf1b;
+	text-decoration: underline;
+	padding: 2px 3px;
+	transition: ease 0.2s all;
+}
+
+.border li a:hover {
+	color: black;
+	background: #f6cf1b;
+	transition: ease 0.2s all;
 }
